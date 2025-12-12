@@ -1,0 +1,60 @@
+{
+    "version": 4,
+    "data": {
+        "envValue": "env/env.env",
+        "title": "2.6功能测试",
+        "remarks": "2.6功能测试",
+        "testCode": "2.6",
+        "config": {},
+        "deviceList": [
+            {
+                "id": "8176h0AUJSUFpeCuZZJ39",
+                "name": "仿真设备(脚本)",
+                "luaVal": "func/2.6_reset_test.lua",
+                "kind": "SIMU"
+            }
+        ],
+        "channelList": [
+            {
+                "id": "p_zzvM9e7ZdVQLHzS-B5M",
+                "name": "仿真设备(脚本)",
+                "items": [
+                    {
+                        "name": "shoot",
+                        "checked": true
+                    },
+                    {
+                        "name": "target",
+                        "checked": true
+                    }
+                ]
+            },
+            {
+                "id": "68BES3VzDZTutC43_4bW3",
+                "name": "实物设备",
+                "items": [
+                    {
+                        "name": "COM_shoot",
+                        "checked": false
+                    },
+                    {
+                        "name": "COM_target",
+                        "checked": false
+                    }
+                ]
+            }
+        ],
+        "protocolList": [
+            {
+                "name": "target",
+                "uri": "prot/target.prot",
+                "checked": true
+            },
+            {
+                "name": "shoot",
+                "uri": "prot/shoot.prot",
+                "checked": true
+            }
+        ]
+    }
+}
