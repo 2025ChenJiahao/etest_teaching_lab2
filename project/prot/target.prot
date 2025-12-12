@@ -1,0 +1,79 @@
+{
+    "version": 4,
+    "data": {
+        "kind": "protocol",
+        "alignment": "right",
+        "title": "target",
+        "items": [
+            {
+                "id": "a0R2kDlcf",
+                "kind": "seg_integer",
+                "name": "header",
+                "title": "包头",
+                "autoValue": "0xAA55",
+                "signed": "false",
+                "bitCount": "16",
+                "bigOrder": "true",
+                "encode": "complement",
+                "option": {
+                    "match": "value == 0xAA55"
+                }
+            },
+            {
+                "id": "VCE3vLQRek",
+                "kind": "seg_integer",
+                "name": "data1",
+                "title": "数据标志1",
+                "autoValue": "0xCC",
+                "signed": "false",
+                "bitCount": "8",
+                "bigOrder": "false",
+                "encode": "complement"
+            },
+            {
+                "id": "AO5MIh_SP!D9aioG;kJ$",
+                "kind": "seg_integer",
+                "name": "zone",
+                "title": "投中区域",
+                "autoValue": "0x1",
+                "signed": "false",
+                "bitCount": "8",
+                "bigOrder": "false",
+                "encode": "complement"
+            },
+            {
+                "id": "k(~h2%R1#kw|mEs##EcD",
+                "kind": "seg_integer",
+                "name": "data2",
+                "title": "数据标志2",
+                "autoValue": "0x11",
+                "signed": "false",
+                "bitCount": "8",
+                "bigOrder": "false",
+                "encode": "complement"
+            },
+            {
+                "id": "_?-DG{z)LZq:d1D+DgJ_",
+                "kind": "seg_integer",
+                "name": "check",
+                "title": "校验和",
+                "autoValue": "CheckCode(SUM_8,this.data1,this.data2)",
+                "signed": "false",
+                "bitCount": "8",
+                "bigOrder": "false",
+                "encode": "complement"
+            },
+            {
+                "id": "YnT_r9Gq5C",
+                "kind": "seg_integer",
+                "name": "tail",
+                "title": "包尾",
+                "autoValue": "0x55AA",
+                "signed": "false",
+                "bitCount": "16",
+                "bigOrder": "true",
+                "encode": "complement"
+            }
+        ]
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "version": 4,
+    "data": {
+        "envValue": "env/env.env",
+        "title": "",
+        "remarks": "",
+        "testCode": "",
+        "config": {},
+        "deviceList": [
+            {
+                "id": "yVL2lWvi-7EJ7-DQZlKmb",
+                "name": "仿真设备(脚本)",
+                "luaVal": "func/1shoot.lua",
+                "yamlVal": "testdata/data_biao.yml",
+                "kind": "SIMU"
+            }
+        ],
+        "channelList": [
+            {
+                "id": "L4AwZ2wQIYXOQKG2_IStq",
+                "name": "仿真设备(脚本)",
+                "items": [
+                    {
+                        "name": "shoot",
+                        "checked": false
+                    },
+                    {
+                        "name": "target",
+                        "checked": false
+                    }
+                ]
+            },
+            {
+                "id": "gPOuaq4CN8ykJ7RqIvgp1",
+                "name": "实物设备",
+                "items": [
+                    {
+                        "name": "COM_shoot",
+                        "checked": false
+                    },
+                    {
+                        "name": "COM_target",
+                        "checked": false
+                    }
+                ]
+            }
+        ],
+        "protocolList": [
+            {
+                "name": "target",
+                "uri": "prot/target.prot"
+            },
+            {
+                "name": "shoot",
+                "uri": "prot/shoot.prot"
+            }
+        ]
+    }
+}

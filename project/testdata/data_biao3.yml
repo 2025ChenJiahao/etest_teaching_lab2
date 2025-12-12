@@ -1,0 +1,33 @@
+shoot: 
+  - type: 0
+    number: 0
+  - type: 3
+    number: 1
+  - type: 4
+    number: 3
+  - type: 5
+    number: 5
+  - type: 8
+    number: 7
+  - type: 9
+    number: 9
+  - type: 10
+    number: 10
+  - type: 11
+    number: 11
+  - type: 12
+    number: 13
+  - type: 15
+    number: 15
+  - type: 22
+    number: 17
+  - type: 32
+    number: 19
+  - type: 63
+    number: 20
+  - type: 127
+    number: 21
+  - type: 200
+    number: 26
+  - type: 255
+    number: 34

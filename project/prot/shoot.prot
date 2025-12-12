@@ -1,0 +1,76 @@
+{
+    "version": 4,
+    "data": {
+        "kind": "protocol",
+        "alignment": "right",
+        "title": "shoot",
+        "items": [
+            {
+                "id": "a0R2kDlcf",
+                "kind": "seg_integer",
+                "name": "header",
+                "title": "包头",
+                "autoValue": "0xAA55",
+                "signed": "false",
+                "bitCount": "16",
+                "bigOrder": "true",
+                "encode": "complement"
+            },
+            {
+                "id": "VCE3vLQRek",
+                "kind": "seg_integer",
+                "name": "data",
+                "title": "数据标志",
+                "autoValue": "0xBB",
+                "signed": "false",
+                "bitCount": "8",
+                "bigOrder": "false",
+                "encode": "complement"
+            },
+            {
+                "id": ").qg(.[`33zK@e:Cq.8K",
+                "kind": "seg_integer",
+                "name": "type",
+                "title": "飞镖类型",
+                "autoValue": "0x01",
+                "signed": "false",
+                "bitCount": "8",
+                "bigOrder": "false",
+                "encode": "complement"
+            },
+            {
+                "id": ")WzX(-mJ8QE/P[$ul19M",
+                "kind": "seg_integer",
+                "name": "number",
+                "title": "飞镖数量",
+                "autoValue": "0x5",
+                "signed": "false",
+                "bitCount": "8",
+                "bigOrder": "false",
+                "encode": "complement"
+            },
+            {
+                "id": ";g6{AedcVivv~mwqBAk]",
+                "kind": "seg_integer",
+                "name": "check",
+                "title": "校验和",
+                "autoValue": "CheckCode(SUM_8, this.data,this.number)",
+                "signed": "false",
+                "bitCount": "8",
+                "bigOrder": "false",
+                "encode": "complement"
+            },
+            {
+                "id": "YnT_r9Gq5C",
+                "kind": "seg_integer",
+                "name": "tail",
+                "title": "包尾",
+                "autoValue": "0x55AA",
+                "signed": "false",
+                "bitCount": "16",
+                "bigOrder": "true",
+                "encode": "complement"
+            }
+        ]
+    }
+}
